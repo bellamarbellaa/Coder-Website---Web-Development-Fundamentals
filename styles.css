@@ -1,0 +1,250 @@
+/* The * tag means that the CSS styling 
+is applied for the entire content of html page*/
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0%;
+    padding:0%;
+}
+
+p {
+    color: #979797;
+    margin: 0 0 15px 0;
+}
+
+header h1 {
+    font-weight: 700;
+    /* font-style: oblique; */
+    position: absolute;
+    top: 80px;
+    left: 128px;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    left: 128px;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+}
+
+/* The text-decoration CSS property can remove underline from HTML links */
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #ffc108;
+}
+
+#landing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    column-gap: 16px;
+}
+
+#landing > div {
+    width: 50%;
+    margin: 10px;
+}
+
+#landing a {
+    margin: 50px 10px;
+    padding: 5px 7px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #ffc108;
+    color: white;
+    border: 3px solid black;
+}
+    /*Property padding diisi valueS searah jarum jam, so top, right, bottom, left*/
+    /* padding: 8px 12px 4px 8px; */
+
+/*Styling to specific elements is prioritized compared to more generalized ones*/
+.btn-alt {
+/*Giving background image for button*/
+    /* background-image: url(images/about.png);*/
+    background-color: white;
+    color:#ffc108;
+    border: 3px solid #ffc108;
+}
+
+/*CSS Combinator Styling: A B for Descendant Combinator, A ~ B for Sibling Combinator,
+A > B for Child Combinator, and A + B Adjacent Sibling Combinator*/
+
+#landing p {
+    margin-bottom: 30px;
+    /* To comment out a block of CSS code, we can press ctrl / */
+    /* background-image: url(images/service3.png); */
+} 
+
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    column-gap: 16px;
+}
+
+#about > div {
+    width: 50%;
+    margin: 20px;
+}
+
+.about-statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-statistics > div > div { /*bisa juga .about-stats-item > div*/
+    width: 50px;
+    height: 10px;
+    background-color:#ffc108; 
+    margin-bottom: 20px;
+}
+
+.service-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 128px;
+}
+
+.service-header a {
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #ffc108;
+    color: black;
+    border: 3px solid black;
+    padding: 5px 10px;
+}
+
+.service-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 16px;
+    padding: 16px 128px;
+}
+
+.service-details-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*box shadow values mengatur x-axis, y-axis, ketebalan, dan warna keburaman*/
+    box-shadow: -2px 4px 4px #979797;
+    margin-left: 10px;
+}
+
+.service-details-item h2 {
+    margin-top: 20px;
+}
+
+.service-details-item p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+#contact-us {
+    padding: 16px 128px;
+}
+
+.contact-details{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #ffc108;
+}
+
+.contact-details-form {
+    margin-right: 20px;
+    border: 5px solid #ffc108;
+    padding: 20px 20px; 
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer > div {
+    padding: 16px 128px;
+    background-color:#ffc108;
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+    justify-content: space-between;
+}
+
+footer > div > p, footer > div > h1 {
+    color: white;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    #landing {
+        flex-direction: column;
+        padding: 8px;
+    }
+    #about, #service {
+        flex-direction: column;
+        padding: 8px;
+    }
+    .service-details {
+        grid-template-columns: 1fr;
+    }
+}

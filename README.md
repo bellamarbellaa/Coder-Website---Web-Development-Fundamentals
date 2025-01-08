@@ -23,9 +23,9 @@ Services offered by Coder are displayed in a grid format, with each service repr
 
 8. Google Maps Integration:  The Contact Us section includes an embedded Google Maps iframe, providing users with the business's physical location. This feature helps users easily find the business location.
 
-9. Dynamic Header Background Change on Scroll
+9. Dynamic Header Background Change on Scroll: 
 The website uses JavaScript to change the header background color when scrolling down, offering a dynamic visual effect that enhances user experience. This is achieved through DOM manipulation by targeting the header element and changing its backgroundColor property based on the scroll position.
 
-10. Form Handling and Validation
+10. Form Handling and Validation: 
 The contact form uses Java Script DOM manipulation to handle user input. It checks if all fields are filled out, providing feedback with alert messages based on the form’s content. This feature ensures users are guided to complete all necessary information before submission.
 

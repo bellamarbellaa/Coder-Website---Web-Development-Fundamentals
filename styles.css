@@ -36,10 +36,21 @@ header a {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    margin: 10px;
 }
 
 header a:hover {
     color: #ffc108;
+}
+
+/* Hide the navigation menu in small screen */
+nav > a {
+    display: none;
+}
+
+/* Show the menu when the 'open' class is added */
+.open > a {
+    display: inline;
 }
 
 #landing {
